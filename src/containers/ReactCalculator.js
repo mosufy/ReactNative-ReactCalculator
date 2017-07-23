@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
+
 import {
   View,
-  Text,
-  AppRegistry
+  Text
 } from 'react-native';
 import Style from './Style';
 import InputButton from './InputButton';
@@ -15,7 +15,7 @@ const inputButtons = [
   [0, '.', '=', '+']
 ];
 
-class ReactCalculator extends Component {
+export default class ReactCalculator extends Component {
   constructor(props) {
     super(props);
 
@@ -111,5 +111,3 @@ class ReactCalculator extends Component {
     }
   }
 }
-
-AppRegistry.registerComponent('ReactCalculator', () => ReactCalculator);
